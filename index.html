@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sorting Algorithm Visualization</title>
+    <!-- Inside the <head> section of index.html -->
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Add your custom CSS file (to be created in the next step) -->
+    <link rel="stylesheet" href="sorting.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Sorting Algorithm Visualization</h1>
+    </header>
+
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div id="controls">
+            <button type="button" class="btn btn-dark bubble-sort">Bubble Sort</button>
+            <button type="button" class="btn btn-dark selection-sort">Selection Sort</button>
+            <button type="button" class="btn btn-dark insertion-sort">Insertion Sort</button>
+            <button type="button" class="btn btn-dark quick-sort">Quick Sort</button>
+            <button type="button" class="btn btn-dark merge-sort">Merge Sort</button>
+            <button type="button" class="btn btn-dark new-array" id="newArrayBtn">Generate New Array</button>
+
+        </div>
+        
+    </nav>
+    <!-- Main content -->
+    <main>
+        <div id="barsContainer"></div>
+    </main>
+    <span>
+        <label for="arr_sz">Number of Bars:</label>
+        <input id="arr_sz" type="range" min="20" max="120" step="1" value="60">
+    </span>
+    <span>
+        <label for="speed">Speed:</label>
+        <input id="speed" type="range" min="1" max="100" step="1" value="50">
+    </span>
+    
+
+
+    <!-- Visualization area and other content can be added here in the future milestones -->
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="insertion.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+    <script src="selection.js"></script>
+</body>
+</html>
